@@ -1,0 +1,47 @@
+	#topo{
+		text-align: center;
+		padding-bottom: 60px; 
+		background-color: #E6E6FA;
+	}
+	#menu{
+		text-align: center;
+		background-color: #E6E6FA;
+	}
+	#titulo{
+		background-color: #40E0D0;
+	}
+	#fundo{
+		background-color: #E6E6FA;
+		text-align: center;
+	}
+	#imagemfundo{
+		background-image: url("imagens/fundo.jpg");
+	}
+	#letramaior{
+		font-size:17px;
+	}
+	td{
+		background-color: #B0E0E6;
+	}
+	.op_menu{
+		width: 130px;
+		height: 40px;
+		line-height: 37px;
+		background-color: #40E0D0;
+		margin-bottom: 7px;
+		border: 1px solid black;
+		font-size: 17px;
+	}
+	.op_menu:hover{
+		background-color: #00CED1;
+	}
+	.menu{
+		list-style: none;
+		height: 60px;
+		width: 180px;
+		margin: auto;
+	}
+	a:link {
+		text-decoration: none;
+		color: black;
+	}

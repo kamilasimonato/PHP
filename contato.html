@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>INFO-ON - Cursos de Informática</title>
+		<link rel="stylesheet" type="text/css" href="./estilos/css.css">
+		<script type="text/javascript" src="./scrips/javascript.js"></script>
+	</head>
+	<body id="fundo">
+		<h2 id="titulo">Contato</h2>
+		<br>
+		<form method="POST" action="./php/gravar.php">
+			<p>Nome Completo: <input type="text" size="30" id="nome" name="nome">&nbsp;&nbsp;</p>
+			<p>Data de nascimento: <input type="date" size="10" id="data" name="data">&nbsp;&nbsp;</p>
+			<p>Telefone: <input type="text" size="10" id="telefone" name="telefone" >&nbsp;&nbsp;</p>
+			<p>E-mail: <input type="email" size="20" id="email" name="email"></p>
+
+			Cidade: <select name="cidade" size="1">
+				<option value="Americana"> Americana </option>
+				<option value="Campinas"> Campinas </option>
+				<option value="Hortolândia"> Hortolândia </option>
+				<option value="Monte Mor"> Monte Mor </option>
+				<option value="Nova Odessa"> Nova Odessa </option>
+				<option value="Sumaré"> Sumaré </option>
+			</select>
+			<br><br>
+			<p><input type="submit" value="Enviar seus dados" name="enviardados">&nbsp;&nbsp;
+		</form>
+		
+		<form>
+			<button onclick="Limpar();">Limpar</button>
+		</form>		
+		
+		<form action="./php/upload.php" enctype="multipart/form-data" method="POST">
+		<p> Se possuem alguma experiência na área de Informática </p>
+			<p>nos envie um arquivo PDF, descrevendo-as. Para facilitar sua escolha no nível do curso!</p>
+			<p align="center">Arquivo: <input type="file" id="resumo_experiencias" name="resumo_experiencias" required>
+			<p align="center"><input type="submit" value="Enviar arquivo">
+		</form>
+		<br><br>
+		<img src="./imagens/contatoimg.png" alt="imgcontato" width="310" height="150">
+		<p><a href="cursosInformatica.html" id="letramaior">Voltar ao menu principal</a></p>
+	</body>
+</html>

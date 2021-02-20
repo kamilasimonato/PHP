@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>INFO-ON - Cursos de Informática</title>
+		<link rel="stylesheet" type="text/css" href="./estilos/css.css">
+		<script type="text/javascript" src="./scrips/javascript.js"></script>
+	</head>
+	<body id="fundo">
+		<h2 id="titulo">Cadastro Contato</h2>
+		<br>
+		<form method="POST" action="./php/cadastrar.php">
+			<p>Nome do Contato: <input type="text" size="30" id="nome" name="nome">&nbsp;&nbsp;</p>
+			<p>Senha: <input type="password" size="20" id="senha" name="senha">&nbsp;&nbsp;</p>
+			<p>Data de nascimento: <input type="date" size="10" id="data" name="data">&nbsp;&nbsp;</p>
+			<p>Telefone: <input type="text" size="10" id="telefone" name="telefone" >&nbsp;&nbsp;</p>
+			<p>E-mail: <input type="email" size="20" id="email" name="email"></p>
+			Cidade: <select name="cidade" size="1">
+				<option value="Americana"> Americana </option>
+				<option value="Campinas"> Campinas </option>
+				<option value="Hortolândia"> Hortolândia </option>
+				<option value="Monte Mor"> Monte Mor </option>
+				<option value="Nova Odessa"> Nova Odessa </option>
+				<option value="Sumaré"> Sumaré </option>
+			</select>
+			<p>Foto <input type="file" size="30" name="foto" placeholder="Selecione a imagem no diretório"></p>
+
+			<br>
+			<p><input type="submit" value="Enviar seus dados" name="enviardados">&nbsp;&nbsp;
+		</form>
+		<p><a href="cursosInformatica.html" id="letramaior">Voltar ao menu principal</a></p>
+	</body>
+</html>
